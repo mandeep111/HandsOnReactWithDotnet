@@ -1,0 +1,32 @@
+Some good extensions for vs code:
+	1. Auto close tag
+	2. Auto rename tag
+	3. Bracket pair colorizer
+	4. C# and C# extensions
+	5. ES7 React/Redux/GraphQL
+	6. Material icon theme
+	7. Nuget Package Manager
+	8. Prettier
+	9. SQLite
+	
+Basic commands to start with:
+To create a .net solution:
+	dotnet new sln
+	
+To create class library:
+	dotnet new classlib -n <Name>
+
+To create web api project:
+	dotnet new webapi -n <Name>
+
+Adding reference to another project:
+	dotnet add reference <Name>
+
+Adding migrations:
+	dotnet ef migrations add <Name> -p <ClassName> -s <Startup Project>
+	
+To create a new react application:
+	npx create-react-app <Name> --use-npm --template typescript
+
+To run a react app:
+	npm start
