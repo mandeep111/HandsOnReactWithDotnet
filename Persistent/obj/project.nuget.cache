@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "JSTlzsR7/AZw1pweOV2/n4jh1clp1IACix3hoWRI6tKDV731ZQInP7yk+5sBcp/othAAY/qC4cH1DHC13Ew8Kg==",
+  "success": true,
+  "projectFilePath": "D:\\C#\\ReactWithDotnet\\Persistent\\Persistent.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mandeep\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\mandeep\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
