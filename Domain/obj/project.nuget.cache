@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "F/K2UpxlwYTWV7dNfJRdswgFp32CEAe63dsd7IYt8U8LuzdMkzYlVTAW5CSmN6cjRvy1l5GaDJLAdy6IJTWKxg==",
+  "dgSpecHash": "C4Q7NdCjkgzYgBYEYWxcp2/F8xuQOcANyBQRx26nW4MEym8Z5FUPggeOUcHy7bB/aiHMulxsbjU1N2g7rE6B4Q==",
   "success": true,
-  "projectFilePath": "D:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\mandeep\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\mandeep\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
-  ],
+  "projectFilePath": "d:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

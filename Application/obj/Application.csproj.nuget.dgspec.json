@@ -1,31 +1,90 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C#\\ReactWithDotnet\\Application\\Application.csproj": {}
+    "d:\\C#\\ReactWithDotnet\\Application\\Application.csproj": {}
   },
   "projects": {
-    "D:\\C#\\ReactWithDotnet\\Application\\Application.csproj": {
+    "d:\\C#\\ReactWithDotnet\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C#\\ReactWithDotnet\\Application\\Application.csproj",
+        "projectUniqueName": "d:\\C#\\ReactWithDotnet\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "D:\\C#\\ReactWithDotnet\\Application\\Application.csproj",
+        "projectPath": "d:\\C#\\ReactWithDotnet\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\mandeep\\.nuget\\packages\\",
-        "outputPath": "D:\\C#\\ReactWithDotnet\\Application\\obj\\",
+        "outputPath": "d:\\C#\\ReactWithDotnet\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mandeep\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.0"
+          "netstandard2.1"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.0": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "d:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj": {
+                "projectPath": "d:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj"
+              },
+              "d:\\C#\\ReactWithDotnet\\Persistent\\Persistent.csproj": {
+                "projectPath": "d:\\C#\\ReactWithDotnet\\Persistent\\Persistent.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "d:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "d:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "d:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\mandeep\\.nuget\\packages\\",
+        "outputPath": "d:\\C#\\ReactWithDotnet\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\mandeep\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
             "projectReferences": {}
           }
         },
@@ -36,13 +95,71 @@
         }
       },
       "frameworks": {
-        "netstandard2.0": {
-          "dependencies": {
+        "netstandard2.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "NETStandard.Library": {
-              "suppressParent": "All",
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "d:\\C#\\ReactWithDotnet\\Persistent\\Persistent.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "d:\\C#\\ReactWithDotnet\\Persistent\\Persistent.csproj",
+        "projectName": "Persistent",
+        "projectPath": "d:\\C#\\ReactWithDotnet\\Persistent\\Persistent.csproj",
+        "packagesPath": "C:\\Users\\mandeep\\.nuget\\packages\\",
+        "outputPath": "d:\\C#\\ReactWithDotnet\\Persistent\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\mandeep\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.1": {
+            "projectReferences": {
+              "d:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj": {
+                "projectPath": "d:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
+              "version": "[3.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.0, )"
             }
           },
           "imports": [
@@ -55,6 +172,11 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "frameworkReferences": {
+            "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
