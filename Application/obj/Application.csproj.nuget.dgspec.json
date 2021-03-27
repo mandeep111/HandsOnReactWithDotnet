@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\C#\\ReactWithDotnet\\Application\\Application.csproj": {}
+    "D:\\C#\\ReactWithDotnet\\Application\\Application.csproj": {}
   },
   "projects": {
-    "d:\\C#\\ReactWithDotnet\\Application\\Application.csproj": {
+    "D:\\C#\\ReactWithDotnet\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\C#\\ReactWithDotnet\\Application\\Application.csproj",
+        "projectUniqueName": "D:\\C#\\ReactWithDotnet\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "d:\\C#\\ReactWithDotnet\\Application\\Application.csproj",
+        "projectPath": "D:\\C#\\ReactWithDotnet\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\mandeep\\.nuget\\packages\\",
-        "outputPath": "d:\\C#\\ReactWithDotnet\\Application\\obj\\",
+        "outputPath": "D:\\C#\\ReactWithDotnet\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mandeep\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -27,11 +27,11 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "d:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj": {
-                "projectPath": "d:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj"
+              "D:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj"
               },
-              "d:\\C#\\ReactWithDotnet\\Persistent\\Persistent.csproj": {
-                "projectPath": "d:\\C#\\ReactWithDotnet\\Persistent\\Persistent.csproj"
+              "D:\\C#\\ReactWithDotnet\\Persistent\\Persistent.csproj": {
+                "projectPath": "D:\\C#\\ReactWithDotnet\\Persistent\\Persistent.csproj"
               }
             }
           }
@@ -63,14 +63,14 @@
         }
       }
     },
-    "d:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj": {
+    "D:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "d:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj",
+        "projectPath": "D:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\mandeep\\.nuget\\packages\\",
-        "outputPath": "d:\\C#\\ReactWithDotnet\\Domain\\obj\\",
+        "outputPath": "D:\\C#\\ReactWithDotnet\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mandeep\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -115,14 +115,14 @@
         }
       }
     },
-    "d:\\C#\\ReactWithDotnet\\Persistent\\Persistent.csproj": {
+    "D:\\C#\\ReactWithDotnet\\Persistent\\Persistent.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\C#\\ReactWithDotnet\\Persistent\\Persistent.csproj",
+        "projectUniqueName": "D:\\C#\\ReactWithDotnet\\Persistent\\Persistent.csproj",
         "projectName": "Persistent",
-        "projectPath": "d:\\C#\\ReactWithDotnet\\Persistent\\Persistent.csproj",
+        "projectPath": "D:\\C#\\ReactWithDotnet\\Persistent\\Persistent.csproj",
         "packagesPath": "C:\\Users\\mandeep\\.nuget\\packages\\",
-        "outputPath": "d:\\C#\\ReactWithDotnet\\Persistent\\obj\\",
+        "outputPath": "D:\\C#\\ReactWithDotnet\\Persistent\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mandeep\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -138,8 +138,8 @@
         "frameworks": {
           "netstandard2.1": {
             "projectReferences": {
-              "d:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj": {
-                "projectPath": "d:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj"
+              "D:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj"
               }
             }
           }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj": {}
+    "D:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "d:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj": {
+    "D:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "d:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj",
+        "projectPath": "D:\\C#\\ReactWithDotnet\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\mandeep\\.nuget\\packages\\",
-        "outputPath": "d:\\C#\\ReactWithDotnet\\Domain\\obj\\",
+        "outputPath": "D:\\C#\\ReactWithDotnet\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mandeep\\AppData\\Roaming\\NuGet\\NuGet.Config",
