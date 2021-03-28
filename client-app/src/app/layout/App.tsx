@@ -24,7 +24,7 @@ const App = () => {
     <Fragment>
       <NavBar />
       <Container style={{marginTop: '6em'}}>
-        <ActivityDashboard activities={activities} selectActivity={handleSelectedActivity} selectedActivity={selectedActivity}/>
+        <ActivityDashboard activities={activities} selectActivity={handleSelectedActivity} selectedActivity={selectedActivity!}/>
       </Container>
     </Fragment>
   );
