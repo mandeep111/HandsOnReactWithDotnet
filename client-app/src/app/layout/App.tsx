@@ -7,11 +7,19 @@ import { ActivityDashboard } from "../../features/activities/ActivityDashboard";
 
 const App = () => {
   const [activities, setActivities] = useState<IActivity[]>([]);
-  const [selectedActivity, setSelectedActivity] = useState<IActivity | null>(null);
+  const [selectedActivity, setSelectedActivity] = useState<IActivity | null>(
+    null
+  );
+  const [editMode, setEditMode] = useState(false);
 
-  const handleSelectedActivity = (id:string) => {
-      setSelectedActivity(activities.filter(s=>s.id === id)[0]);
-  } 
+  const handleSelectedActivity = (id: string) => {
+    setSelectedActivity(activities.filter((s) => s.id === id)[0]);
+  };
+
+  const handleOpenCreateForm = () => {
+    setSelectedActivity(null);
+    setEditMode(true);
+  }
   useEffect(() => {
     axios
       .get<IActivity[]>("http://localhost:5000/api/activities")
@@ -22,9 +30,16 @@ const App = () => {
 
   return (
     <Fragment>
-      <NavBar />
-      <Container style={{marginTop: '6em'}}>
-        <ActivityDashboard activities={activities} selectActivity={handleSelectedActivity} selectedActivity={selectedActivity!}/>
+      <NavBar openCreateForm = {handleOpenCreateForm}/>
+      <Container style={{ marginTop: "6em" }}>
+        <ActivityDashboard
+          activities={activities}
+          selectActivity={handleSelectedActivity}
+          selectedActivity={selectedActivity}
+          editMode = {editMode}
+          setEditMode = {setEditMode}
+          setSelectedActivity = {setSelectedActivity}
+        />
       </Container>
     </Fragment>
   );
