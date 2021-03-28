@@ -30,3 +30,9 @@ To create a new react application:
 
 To run a react app:
 	npm start
+
+For routing we use axios, to install:
+	npm install axios
+
+For semantic ui:
+	npm install semantic-ui-react
