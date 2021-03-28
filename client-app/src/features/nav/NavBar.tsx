@@ -6,7 +6,7 @@ export const NavBar = () => {
     <Menu fixed='top' inverted>
      <Container>
      <Menu.Item>
-       <img src='/assets/logo.png' />
+       <img src='/assets/logo.png' alt='logo' style={{marginRight:'10px'}}/>
        Dotnet with React App
      </Menu.Item>
       <Menu.Item name="Activities" />
