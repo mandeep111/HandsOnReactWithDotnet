@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, { FormEvent, Fragment, useState } from "react";
 import { Button, Form, Segment } from "semantic-ui-react";
 import { IActivity } from "../../app/models/Activity";
 
@@ -27,17 +27,23 @@ export const ActivityForm: React.FC<IProps> = ({
   };
 
   const [activity, setActivity] = useState<IActivity>(initializeForm);
+
+  const handleInputChange = (event: FormEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const {name, value} = event.currentTarget;
+    setActivity({...activity, [name] : value});
+  }
+
   return (
     <Segment clearing>
       <h3>Activity Add/Edit Form</h3>
       <hr />
       <Form>
-        <Form.Input placeholder="title" value={activity.title}/>
-        <Form.TextArea rows={2} placeholder="Description" value={activity.description}/>
-        <Form.Input type="date" placeholder="Date" value={activity.date}/>
-        <Form.Input placeholder="Category" value={activity.category}/>
-        <Form.Input placeholder="City" value={activity.city}/>
-        <Form.Input placeholder="Venue" value={activity.venue}/>
+        <Form.Input placeholder="title" onChange={handleInputChange} name="title" value={activity.title}/>
+        <Form.TextArea rows={2} placeholder="Description" onChange={handleInputChange} name="description" value={activity.description}/>
+        <Form.Input type="date" placeholder="Date" onChange={handleInputChange} name="date" value={activity.date}/>
+        <Form.Input placeholder="Category" onChange={handleInputChange} name="category" value={activity.category}/>
+        <Form.Input placeholder="City" onChange={handleInputChange} name="city" value={activity.city}/>
+        <Form.Input placeholder="Venue" onChange={handleInputChange} name="venue" value={activity.venue}/>
         <Button type="submit" positive floated="right">
           Submit
         </Button>
