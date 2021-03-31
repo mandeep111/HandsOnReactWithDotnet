@@ -5,6 +5,7 @@ import { IActivity } from "../models/Activity";
 import { NavBar } from "../../features/nav/NavBar";
 import { ActivityDashboard } from "../../features/activities/ActivityDashboard";
 import agents from "../api/agents";
+import { LoadingComponent } from "../../features/LoadingComponent";
 
 const App = () => {
   const [activities, setActivities] = useState<IActivity[]>([]);
@@ -12,6 +13,7 @@ const App = () => {
     null
   );
   const [editMode, setEditMode] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const handleSelectedActivity = (id: string) => {
     setSelectedActivity(activities.filter((s) => s.id === id)[0]);
@@ -24,22 +26,29 @@ const App = () => {
   };
 
   const handleCreateActivity = (activity: IActivity) => {
-    setActivities([...activities, activity]);
-    setSelectedActivity(activity);
-    setEditMode(false);
+    agents.Activities.create(activity).then(() => {
+      setActivities([...activities, activity]);
+      setSelectedActivity(activity);
+      setEditMode(false);
+    })
   };
 
   const handleEditActivity = (activity: IActivity) => {
-    setActivities([
-      ...activities.filter((a) => a.id !== activity.id),
-      activity,
-    ]);
-    setSelectedActivity(activity);
-    setEditMode(false);
+    agents.Activities.update(activity).then(() => {
+      setActivities([
+        ...activities.filter((a) => a.id !== activity.id),
+        activity,
+      ]);
+      setSelectedActivity(activity);
+      setEditMode(false);
+    })
+   
   };
 
   const handleDeleteActivity = (id: string) => {
-    setActivities([...activities.filter(a=>a.id !== id)]);
+    agents.Activities.delete(id).then( () => {
+      setActivities([...activities.filter(a=>a.id !== id)]);
+    })
   }
 
   useEffect(() => {
@@ -51,8 +60,10 @@ const App = () => {
           activities.push(activity);
         });
         setActivities(activities);
-      });
+      }).then(() => setLoading(false));
   }, []);
+
+  if (loading) return <LoadingComponent content= 'Loading...'/>
 
   return (
     <Fragment>
