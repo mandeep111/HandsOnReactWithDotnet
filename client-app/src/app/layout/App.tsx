@@ -4,6 +4,7 @@ import axios from "axios";
 import { IActivity } from "../models/Activity";
 import { NavBar } from "../../features/nav/NavBar";
 import { ActivityDashboard } from "../../features/activities/ActivityDashboard";
+import agents from "../api/agents";
 
 const App = () => {
   const [activities, setActivities] = useState<IActivity[]>([]);
@@ -42,11 +43,10 @@ const App = () => {
   }
 
   useEffect(() => {
-    axios
-      .get<IActivity[]>("http://localhost:5000/api/activities")
+    agents.Activities.list()
       .then((response) => {
         let activities: IActivity[] = [];
-        response.data.forEach(activity => {
+        response.forEach(activity => {
           activity.date = activity.date.split('.')[0];
           activities.push(activity);
         });
